@@ -1,10 +1,12 @@
 package io.github.muqhc.frogui.myapp
 
 import io.github.muqhc.frogui.*
-import java.awt.CardLayout
 import java.awt.Color
-import java.awt.event.*
-import javax.swing.*
+import java.awt.event.WindowAdapter
+import java.awt.event.WindowEvent
+import javax.swing.BorderFactory
+import javax.swing.JFrame
+import javax.swing.JPanel
 import kotlin.system.exitProcess
 
 class MyApp : JFrame() {
