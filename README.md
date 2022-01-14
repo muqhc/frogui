@@ -1,2 +1,2 @@
 # frogui
-#### providing DSL for Swing
+#### the providing DSL for Swing
