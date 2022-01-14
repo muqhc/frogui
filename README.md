@@ -53,6 +53,8 @@ val helloPanel = JPanel() borderLayout {
 ```
 ![example_image.png](README_RESOURCES/example_image.png)
 
+---
+
 ### make your own custom JPanel
 ```kotlin
 class CounterPanel() : JPanel() {
@@ -81,3 +83,7 @@ class CounterPanel() : JPanel() {
 }
 ```
 ![example_video.gif](README_RESOURCES/example_video.gif)
+
+---
+
+### [other example code](frogui-debug/src/main/kotlin/io/github/muqhc/frogui)
