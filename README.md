@@ -20,7 +20,7 @@ import io.github.muqhc.frogui.*
 ```
 ### JPanel to JFrame
 ```kotlin
-JPanel().asFrame //or JPanel().toJFrame
+JPanel().asFrame //or JPanel().toJFrame()
 ```
 ### build JPanel  (by using frogui dsl)
 ```kotlin
