@@ -25,6 +25,7 @@ JPanel().asFrame //or JPanel().toJFrame()
 ### build JPanel  (by using frogui dsl)
 ```kotlin
 val helloPanel = JPanel() borderLayout {
+
     north = JButton("I'm north!")
 
     center = gridLayout {
@@ -49,6 +50,7 @@ val helloPanel = JPanel() borderLayout {
     }
 
     south = JButton("I'm south!")
+    
 }
 ```
 ![example_image.png](README_RESOURCES/example_image.png)
