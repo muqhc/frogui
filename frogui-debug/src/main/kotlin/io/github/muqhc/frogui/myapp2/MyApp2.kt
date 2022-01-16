@@ -5,7 +5,7 @@ import javax.swing.JButton
 import javax.swing.JPanel
 
 fun main() {
-    val panel = JPanel() borderLayout {
+    val panel = borderLayout {
         //add component to 'north'
         north = JButton("I'm north!")
 

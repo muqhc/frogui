@@ -29,7 +29,10 @@ class CounterPanel() : JPanel() {
 }
 
 fun main() {
-    CounterPanel().asFrame.run {
+    CounterPanel().gridLayout {
+        layout.rows = 3
+        +JButton("Reset!").apply { addActionListener { panel.update(0) } }
+    }.asFrame.run {
         setSize(400,300)
         isVisible = true
     }
