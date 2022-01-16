@@ -6,29 +6,25 @@ import javax.swing.JPanel
 
 fun main() {
     val panel = JPanel() borderLayout {
+        //add component to 'north'
         north = JButton("I'm north!")
 
-        center = gridLayout {
-            layout.rows = 2
+        //add component to 'south'
+        south = JButton("I'm south!")
+
+        //add component to 'center'
+        center = gridLayout { // add inner panel
             layout.columns = 2
 
+            //use 'unary plus' to add component
             +JButton("I'm the First!")
-            +JButton("I'm the Second!")
 
-            +flowLayout {
+            +flowLayout { // add inner panel
                 +JButton("[ 1 ]")
                 +JButton("[ 2 ]")
                 +JButton("[ 3 ]")
             }
-
-            +flowLayout {
-                +JButton("[ a ]")
-                +JButton("[ b ]")
-                +JButton("[ c ]")
-            }
         }
-
-        south = JButton("I'm south!")
     }
     panel.asFrame.run {
         title = "Hello Frogui!"

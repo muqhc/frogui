@@ -25,32 +25,25 @@ JPanel().asFrame //or JPanel().toJFrame()
 ### build JPanel  (by using frogui dsl)
 ```kotlin
 val helloPanel = JPanel() borderLayout {
-
+    //add component to 'north'
     north = JButton("I'm north!")
+    
+    //add component to 'south'
+    south = JButton("I'm south!")
 
-    center = gridLayout {
-        layout.rows = 2
+    //add component to 'center'
+    center = gridLayout { // add inner panel
         layout.columns = 2
-        
+
         //use 'unary plus' to add component
         +JButton("I'm the First!")
-        +JButton("I'm the Second!")
 
-        +flowLayout {
+        +flowLayout { // add inner panel
             +JButton("[ 1 ]")
             +JButton("[ 2 ]")
             +JButton("[ 3 ]")
         }
-
-        +flowLayout {
-            +JButton("[ a ]")
-            +JButton("[ b ]")
-            +JButton("[ c ]")
-        }
     }
-
-    south = JButton("I'm south!")
-    
 }
 ```
 ![example_image.png](README_RESOURCES/example_image.png)
