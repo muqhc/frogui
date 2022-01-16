@@ -22,6 +22,9 @@ import io.github.muqhc.frogui.*
 ```kotlin
 JPanel().asFrame //or JPanel().toJFrame()
 ```
+
+---
+
 ### build JPanel  (by using frogui dsl)
 ```kotlin
 val helloPanel = JPanel() borderLayout {
