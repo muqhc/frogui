@@ -18,10 +18,6 @@ dependencies {
 ```kotlin
 import io.github.muqhc.frogui.*
 ```
-### JPanel to JFrame
-```kotlin
-JPanel().asFrame //or JPanel().toJFrame()
-```
 
 ---
 
