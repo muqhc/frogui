@@ -23,7 +23,8 @@ import io.github.muqhc.frogui.*
 
 ### build JPanel  (by using frogui dsl)
 ```kotlin
-val helloPanel = borderLayout {
+val myPane = borderLayout {
+
     //add component to 'north'
     north = JButton("I'm north!")
     
@@ -82,7 +83,7 @@ class CounterPanel() : JPanel() {
 
 ##### ( you can also extend it )
 ```kotlin
-val customPanel = CounterPanel() gridLayout {
+val customPane = CounterPanel() gridLayout {
     layout.rows = 3
     +JButton("Reset!").apply { addActionListener { panel.update(0) } }
 }
